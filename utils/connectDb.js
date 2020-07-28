@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const config = require("../config");
 
-var url = process.env.MONGO_SRV || config.MONGO_SRV;
+var url = config.MONGO_SRV;
 
 mongoose.connect(
   url,
